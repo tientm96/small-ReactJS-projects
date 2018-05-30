@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+
+    <!--manifest.json : Nhúng vào ứng dụng Android nếu có.-->
+    <!--%PUBLIC_URL% : chỉ đường dẫn chứa file này đang ở public-->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+
+    <!--add link để tham chiếu đến folder template, giải thích bên dưới.-->
+    <link rel="stylesheet" href="%PUBLIC_URL%/template/css/style.css">
+    
+
+    <!--Trong mục CODE\resource\enviroment thầy có cho folder theme. Trong folder theme có chứa index.html 
+      và folder template(chứa các file css và img).
+
+      + Như vậy, file index.html đang sử dụng css và img trong folder template.
+        (Trong index.html, kiểm tra có dòng <link rel="stylesheet" href="template/css/style.css">)
+        
+      + Vậy để nhúng file index.html(thầy cho) vào index.html(của app này) thì phải add luôn folder template
+        vào folder public(là folder chứa giao diện của app) bằng cách:
+          ++Trong VS Code, kích phải chọn Reval in Explore sẻ mở folder public ra, rồi paste file template vào.
+          ++VS Code sẽ auto update folder public 
+
+      + ADD CHÍNH: Vì index.html(ở app) cũng đã đc thiết lập cả rồi, nên ta chỉ copy 
+                  dòng <link rel ="đường dẫn template"> và phần trong <body> của index.html(thầy cho) thôi.
+          
+          ++Với phần <link rel>, copy nguyên dòng vào trong thẻ </head>. Thêm %PUBLIC_URL% vào đường dẫn
+                    để trực quan hơn. <link rel> sẻ tự tham chiếu tới folder template có trong folder
+                    public thông qua đường dẫn trong nó, để lấy các file css và img.
+                    
+                    (COPY VÀO FILE INDEX.HTML CỦA APP)
+          
+          ++Với phần body html ở trong index.html(thầy cho) là thuần html, nhưng vào trong ReactJS phải đổi
+                    thành JSX, bằng cách đổi online đơn giản giống đổi json bên android. 
+                    +++Search "Html to JSX compiler", vào trang https://magic.reactjs.net/htmltojsx.htm để đổi
+                    +++Bỏ dấu check trong Create class, vì đã có sẵn tên class component rồi.
+                       Còn nếu muốn tạo luôn 1 component mới thì check vào.
+                    +++Copy phần <body> index.html(thầy cho) cần đổi vào để chuyển thành JSX
+                    
+                    +++Lấy kết quả JSX đó đưa vào mục "return(Paste vào đây);" trong "class component App"
+                       của file App.js". Như vậy sẽ có 1 component JSX đc chuyển từ code html.  
+
+                    (WHY DO YOU COPY IT INTO FILE APP.JS???)
+                        +Tại vì đây là quá trình biến đổi component html thành component trong ReactJS
+                        +Mà cơ chế của ReactJS thì các component đc tạo trong App.js, 
+                          nó đc gửi đến index.html qua bộ xử lý index.js bằng id='root' nào đó.
+                        +Khi đó đúng với id="root", index.html sẽ nhận component này, và xử lý.
+                        
+                        +Những file liên quan với folder template, thì tại index.html này nó sẽ gọi.
+                        (Vậy nên đường dẫn <link rel template> đc đặt trong index.html) 
+
+
+        ++ Để run, thay vì run git bash ta dùng cách khác, run tại VS Code.
+          Góc trái, nhấn phản chọn Open in command Prompt để mở Teminal, rồi npm start giống với gitbash
+          Hoặc dùng Ctrl+~ để bật tắt Teminal.  
+        
+        ++ Sau khi chạy lên tại chrome, bấm F12, mở Console lên kiểm tra bug hoặc warning.
+          Mở React lên xem vị trí component tương ứng.
+          
+      -->
+
+
+    <title>React App</title>
+  </head>
+
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <!--npm start :để run app   ||   npm run build: up app lên server-->
+  </body>
+</html>

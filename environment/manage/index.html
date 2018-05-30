@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Khóa học lập trình ReactJS tại QuocTuan.Info">
+    <meta name="author" content="Vũ Quốc Tuấn">
+    <link rel="shortcut icon" href="https://quoctuan.info/public/favicon.ico" type="image/x-icon" />
+    <title>QuocTuan.Info</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="template/css/bootstrap.min.css" >
+    <link type="text/css" rel="stylesheet" href="template/css/navbar.css" >
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-light bg-faded rounded navbar-toggleable-md">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#containerNavbar" aria-controls="containerNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="https://quoctuan.info/">QuocTuan.Info</a>
+            <div class="collapse navbar-collapse" id="containerNavbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="trang-chu.html">Trang Chủ <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="the-loai.html">Thể Loại</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="san-pham.html">Sản Phẩm</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-md-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Nhập từ khóa">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+                </form>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Thành Viên</th>
+                            <th>Quyền</th>
+                            <th class="text-center" colspan="2">
+                            	<a class="btn btn-success btn-sm" href="them" role="button"><i class="fa fa-plus" aria-hidden="true"></i> Thêm</a>
+                            	<a class="btn btn-danger btn-sm" href="dong" role="button"><i class="fa fa-close" aria-hidden="true"></i> Đóng</a>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Vũ Quốc Tuấn</td>
+                            <td>Quản lý</td>
+                            <td class="text-center" width="50px"><a class="btn btn-warning btn-sm" href="sua" role="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sửa</a></td>
+                            <td class="text-center" width="50px"><a class="btn btn-danger btn-sm" href="xoa" role="button"><i class="fa fa-trash-o" aria-hidden="true"></i> Xóa</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            	<div class="alert alert-danger" role="alert">
+				  	<strong>Lỗi </strong> Vui lòng nhập
+				</div>
+
+				<div class="alert alert-success" role="alert">
+				  	<strong>Thông báo </strong> Thành công
+				</div>
+
+            	<div class="card">
+            		<div class="card-header">
+				    	Thêm
+				    	<button type="button" class="close" aria-label="Close">
+						  	<span aria-hidden="true">&times;</span>
+						</button>
+				  	</div>
+				  	<div class="card-block">
+				    	<form method="POST">
+						  	<div class="form-group">
+						    	<label for="txtUser">Thành Viên</label>
+						    	<input type="text" class="form-control" placeholder="Nhập Thành Viên">
+						  	</div>
+						  	<div class="form-group">
+						    	<label for="txtPass">Mật Khẩu</label>
+						    	<input type="password" class="form-control" placeholder="Nhập Mật Khẩu">
+						  	</div>
+						  	<div class="form-group">
+							    <label for="sltLevel">Quyền</label>
+							    <select class="form-control">
+							      <option value="1">Quản Trị Viên</option>
+							      <option value="2">Thành Viên</option>
+							    </select>
+							</div>
+							<button type="submit" class="btn btn-primary">Thêm</button>
+						</form>
+				  	</div>
+				</div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="template/js/jquery-3.1.1.slim.min.js"></script>
+    <script type="text/javascript" src="template/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="template/js/tether.min.js"></script>
+    <script type="text/javascript" src="template/js/bootstrap.min.js"></script>
+</body>
+</html>

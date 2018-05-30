@@ -1,0 +1,32 @@
+[  
+   {  
+      "id":1,
+      "ten":"iPhone S7",
+      "gia":10000000
+   },
+   {  
+      "id":2,
+      "ten":"Samsung Note 7",
+      "gia":15000000
+   },
+   {  
+      "id":3,
+      "ten":"LG V20",
+      "gia":20000000
+   },
+   {  
+      "id":4,
+      "ten":"Gen Phone 9",
+      "gia":12000000
+   },
+   {  
+      "id":5,
+      "ten":"Oppo A5",
+      "gia":13200000
+   },
+   {  
+      "id":6,
+      "ten":"Huawai",
+      "gia":9000000
+   }
+]

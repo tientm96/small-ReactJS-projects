@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	
+	<link rel="stylesheet" href="template/css/style.css">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+	<div id="header">
+		<img src="template/img/banner.png" alt="Sản phẩm" />
+	</div>
+	<div id="menu">
+		<ul>
+			<li><a href="a.html">Trang Chủ</a></li>
+			<li><a href="a.html">Giới Thiệu</a></li>
+			<li><a href="a.html">Sản Phẩm</a></li>
+			<li><a href="a.html">Tin Tức</a></li>
+			<li><a href="a.html">Liên Hệ</a></li>
+		</ul>
+	</div>
+	<div id="pane">
+		<div class="panitem" id="left"></div>
+		<div class="panitem" id="content">
+			<fieldset>
+				<legend>Form Đăng Ký</legend>
+				<form action="a.php" method="POST">
+					<table>
+						<tr>
+							<td width="100px">Username</td>
+							<td><input type="text" name="txtUser" /></td>
+						</tr>
+						<tr>
+							<td>Pasword</td>
+							<td><input type="password" name="txtPass" /></td>
+						</tr>
+						<tr>
+							<td>Size</td>
+							<td><input type="number" name="txtSize" min="0" max="10" value="5" /></td>
+						</tr>
+						<tr>
+							<td>Range</td>
+							<td><input type="range" name="txtRange" min="0" max="100" value="50" /></td>
+						</tr>
+						<tr>
+							<td>Color</td>
+							<td><input type="color" name="txtColor" /></td>
+						</tr>
+						<tr>
+							<td>Email</td>
+							<td><input type="email" name="txtEmail" /></td>
+						</tr>
+						<tr>
+							<td>Gender</td>
+							<td>
+								<input type="radio" name="rdoGender" value="1" checked /> Nam
+								<input type="radio" name="rdoGender" value="0" /> Nữ
+							</td>
+						</tr>
+						<tr>
+							<td>Subject</td>
+							<td>
+								<input type="checkbox" name="chkSubject" value="php" /> PHP
+								<input type="checkbox" name="chkSubject" value="asp" /> ASP
+								<input type="checkbox" name="chkSubject" value="java" /> Java
+								<input type="checkbox" name="chkSubject" value="android" /> Android
+							</td>
+						</tr>
+						<tr>
+							<td>File</td>
+							<td>
+								<input type="file" name="fFile" />
+							</td>
+						</tr>
+						<tr>
+							<td>City</td>
+							<td>
+								<select name="sltThanhPho">
+									<option value="hn">Hà Nội</option>
+									<option value="dn">Đà Nẵng</option>
+									<option value="hcm">Hồ Chí Minh</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>Note</td>
+							<td>
+								<textarea name="txtNote" cols="20" rows="3"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" align="center">
+								<input type="submit" name="btnSubmit" value="Gửi dữ liệu" />
+								<input type="reset" name="btnReset" value="Xóa" />
+								<input type="button" name="btnReset" value="Nút" />
+							</td>
+						</tr>
+					</table>
+				</form>
+			</fieldset>
+		</div>
+		<div class="panitem" id="right"></div>
+	</div>
+	<div class="clear"></div>
+	<div id="lower">
+		<div id="left" class="font">ReactJS</div>
+		<div id="right" class="font">NodeJS</div>
+	</div>
+	<div class="clear"></div>
+	<div id="footer" class="font">Copyright By QuocTuan.Info</div>
+</div>
+
+</body>
+</html>

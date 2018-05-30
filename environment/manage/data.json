@@ -1,0 +1,62 @@
+[
+	{
+		"id"      : 1,
+		"username": "tony@gmail.com",
+		"password": "12345",
+		"level"   : 1
+	},
+	{
+		"id"      : 2,
+		"username": "teo@gmail.com",
+		"password": "67890",
+		"level"   : 1
+	},
+	{
+		"id"      : 3,
+		"username": "ti@gmail.com",
+		"password": "65145",
+		"level"   : 2
+	},
+	{
+		"id"      : 4,
+		"username": "tun@gmail.com",
+		"password": "12345",
+		"level"   : 2
+	},
+	{
+		"id"      : 5,
+		"username": "tuan@gmail.com",
+		"password": "98421",
+		"level"   : 1
+	},
+	{
+		"id"      : 6,
+		"username": "thanh@gmail.com",
+		"password": "87721",
+		"level"   : 1
+	},
+	{
+		"id"      : 7,
+		"username": "ton@gmail.com",
+		"password": "98741",
+		"level"   : 2
+	},
+	{
+		"id"      : 8,
+		"username": "tung@gmail.com",
+		"password": "54126",
+		"level"   : 1
+	},
+	{
+		"id"      : 9,
+		"username": "trung@gmail.com",
+		"password": "36875",
+		"level"   : 2
+	},
+	{
+		"id"      : 10,
+		"username": "thuong@gmail.com",
+		"password": "21678",
+		"level"   : 1
+	}
+]

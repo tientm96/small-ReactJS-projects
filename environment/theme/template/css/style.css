@@ -1,0 +1,125 @@
+* {
+	padding:0px;
+	margin: 0px;
+}
+.clear {
+	clear: both;
+}
+.font {
+	font-size:21px;
+	font-weight: bold;
+	text-align: center;
+	color:red;
+}
+#wrapper {
+	width: 1000px;
+	height: 500px;
+	margin:0px auto;
+}
+#wrapper #header {
+	height: 150px;
+	background: green;
+}
+#wrapper #menu {
+	height: 60px;
+	background: black;
+	margin:10px 0px;
+}
+#wrapper #menu ul {
+	color:white;
+	list-style: none;
+}
+
+#wrapper #menu ul li {
+	float:left;
+	padding:20px;
+	border-right: 1px solid white
+}
+
+#wrapper #menu ul li a {
+	color:white;
+	font-size: 18px;
+	text-decoration: none
+}
+
+#wrapper #menu ul li a:hover {
+	color:red;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+
+#wrapper #pane {
+
+}
+
+#wrapper #pane .panitem {
+	height: 480px;
+	float:left;
+}
+
+#wrapper #pane #left {
+	width: 210px;
+	margin-right: 10px;
+	border:5px solid green;
+}
+
+#wrapper #pane #content {
+	width: 540px;
+	margin-right: 10px;
+	background: white;
+}
+
+#wrapper #pane #content fieldset {
+	width: 500px;
+	margin: 0px auto;
+	height: 430px
+}
+
+#wrapper #pane #content fieldset legend { 
+	margin-left:20px;
+	padding:0px 20px;
+}
+
+#wrapper #pane #content fieldset table {
+	margin-left:10px;
+}
+
+#wrapper #pane #content fieldset table tr {
+	height: 30px
+}
+
+#wrapper #pane #right {
+	width: 210px;
+	border:5px solid green;
+}
+
+#wrapper #lower {
+	margin:10px 0px;
+	line-height: 110px
+}
+
+#wrapper #lower #left {
+	width: 495px;
+	height: 110px;
+	background: pink;
+	float: left;
+	margin-right: 10px;
+}
+
+#wrapper #lower #right {
+	width: 495px;
+	height: 110px;
+	background: pink;
+	float: left
+}
+
+#wrapper #footer {
+	height: 100px;
+	background: gray;
+	margin-top: 10px;
+	line-height: 100px
+}
+
+
+

@@ -1,0 +1,38 @@
+let sanpham = [
+	{
+		name 	: "Laptop Asus",
+		price 	: "10000000",
+		images 	: "/images/products/p1.png",
+		hot 	: true
+	},
+	{
+		name 	: "Điện Thoại Asus",
+		price 	: "40000000",
+		images 	: "/images/products/p2.png",
+		hot 	: false
+	},
+	{
+		name 	: "Điện Thoại iPhone X",
+		price 	: "55000000",
+		images 	: "/images/products/p3.png",
+		hot 	: true
+	},
+	{
+		name 	: "Macbook",
+		price 	: "55000000",
+		images 	: "/images/products/p4.png",
+		hot 	: true
+	},
+	{
+		name 	: "Laptop HP",
+		price 	: "96000000",
+		images 	: "/images/products/p4.png",
+		hot 	: false
+	},
+	{
+		name 	: "Laptop Lenovo",
+		price 	: "26000000",
+		images 	: "/images/products/p3.png",
+		hot 	: true
+	}
+]

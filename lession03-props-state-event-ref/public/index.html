@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+	
+	<!--VIDEO 6: 
+    Lấy dữ liệu từ folder product của thầy, nhúng giao diện.
+	B1: copied folder css,images vào mục public. 
+	B2: Cấu trúc lại link CSS và JavaScripts.
+	 	+ Đưa vào các vị trí tương tự như file index của thầy thì Css trên này, js ở dưới cùng.
+		+ Các đường link online từ bootstrap, ko cần quan tâm.
+		  Các link có href="css/style.css" là link hướng đến folder public để lấy dl,
+		  vậy nên phải thêm %PUBLIC_URL% vào.
+  
+  B3: F12 coi code, tìm vị trí code component, lấy 1 component html chuyển sang JSX rồi copy vào Product.js
+  B4: Qua App.js gọi component Product đó vào. Vì App.js mặc định luôn là nơi chứa component.  
+
+  B5: Copy đoạn code Modal của index.html thầy cho vào. Nhớ chuyển sang JSX
+      Rồi gọi Modal này tại App.js
+      Mục đích của Modal là để bấm vào 2 button sẽ ra message.
+
+      
+	-->
+
+
+    <!-- Copy lại cấu trúc của CSS. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="%PUBLIC_URL%/css/style.css" />
+
+
+    
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    
+    <!-- Copy lại cấu trúc của java script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
